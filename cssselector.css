@@ -1,0 +1,140 @@
+*{margin: 0;padding: 0;box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metamorphous&family=Noto+Sans+Chakma&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{--primary-:#1E104E;
+--secondry-:rgb(224, 175, 11);
+--background-color-:rgba(224, 224, 224, 0.347);
+}
+.container{font-family: metamorphous,sans-serif;
+}
+.ul{display: flex;justify-content: space-between;align-items: center;
+background-color: var(--primary-);color: white;
+padding: 17px 16px;text-transform: capitalize;border-bottom: 4px solid var(--secondry-);
+}
+.ul ul{display: flex;list-style: none;gap: 20px;padding-right: 10px;
+font-size: 1rem;
+}
+.ul ul li a{color: white;text-decoration: none;font-weight: bold;
+}
+.ul nav :first-child{letter-spacing: 2px;font-weight: bold;font-size: 1.8rem;
+}
+.ul nav ::first-letter{font-size: 1.5rem;
+}
+/*hala */
+.hala{height: 69dvh;display: flex;flex-direction: column;
+justify-content: center;align-items: center;position: relative;
+}
+.hala :first-child{font-size: 6rem;text-transform: capitalize;
+    height: 100px;
+color: var(--primary-);font-weight: bold;
+}
+.hala :nth-child(2){color: black;list-style: none;opacity: 0.6;
+font-style: italic;font-size: 1rem;
+padding-top: 0px;letter-spacing: 1px;
+}
+button{background-color:rgb(255, 196, 2);border: none;padding: 16px 33px;
+font-size: 14px;border-radius: 24px;color: var(--primary-);
+margin-top: 20px;transition: all 0.3;
+color: var(--primary-);text-transform: capitalize;font-weight: bold;
+}
+button:hover{transform: scale(1.025);
+}
+
+
+/* icon ka */
+.icon{position: absolute;right: 0;font-size: 10.9rem;
+opacity: 0.1;bottom: 2;width: 148px;overflow: hidden;font-weight: bold;
+}
+
+/* gridka */
+.bo{background-color: whitesmoke;padding: 30px 13px 40px;
+height: 510px;
+}
+.grid{display: grid;grid-template-columns: repeat(3,1fr);
+gap: 10px;padding-top: 28px;padding-bottom: 0px;
+}
+/* before */
+.before::before{width: 7px;height: 30px;background-color: rgb(224, 175, 11);
+left: 6px;content: "";position: absolute;
+bottom: 4px;
+}
+.before{position: relative;font-size: 2rem;padding-left: 20px;
+padding-top: 15px;
+}
+/* 1 */
+.grid header{background-color: var(--background-color-);width: 400px;box-shadow: 0px 5px 6px #00000015;
+height: 360px;position: relative;border-radius: 8px;padding-bottom: 20px;
+}
+.grid .laliga{position: absolute;
+    background-color: white;bottom: 0;
+padding: 20px;width: 100%;
+}
+.grid .laliga :first-child{color: rgb(255, 196, 2);font-size: 12px;letter-spacing: 2px;
+}
+.grid .laliga :nth-child(2){color: var(--primary-);font-size: 1.4rem;padding: 10px 0px;
+}
+.grid .laliga :nth-child(3){opacity: 0.5;text-transform: capitalize;
+}
+
+/* animation */
+.trophy{color: rgb(224, 175, 11);position: absolute;top: -126px;
+    animation-name: bounce  infinite ;
+left: 180px;font-size: 3rem;
+}
+@keyframes bounce {
+0% ,100%{transform: translateY(0);
+
+}
+50% {transform: translateY(-30px);
+
+}
+}
+/* 2 */
+.grid main{background-color: var(--primary-);position: relative;width: 400px;
+position: relative;border-radius: 8px;border: 2px solid rgb(224, 175, 11);
+}
+.sixteen{background-color: white;position: absolute;
+bottom: 0;list-style: none;width: 100%;height: 160px;text-align: center;
+}
+.sixteen .koo{padding: 16px 0px 8px;color: var(--primary-);font-weight: bold;
+font-size: 1.2rem;
+}
+.sixteen .koo + div{opacity: 0.5;
+}
+
+
+/* 3 */
+.three{background-color: var(--background-color-);
+position: relative;border-radius: 8px;width: 400px;box-shadow: 0px 5px 6px #00000015;
+}
+.three-fox{background-color: white;width: 100%;position: absolute;
+height: 160px;
+bottom: 0;height: 160px;list-style: none;padding-left: 20px;padding-top: 30px;
+}
+.three li{color: rgb(255, 196, 2);
+}
+.three li + nav{font-size: 1.3rem;padding: 10px 0px;
+}
+.three nav + div{opacity: 0.5;
+}
+
+
+/* last */
+.copy-1{background-color: var(--primary-);color: rgba(255, 255, 255, 0.692);padding: 30px;
+text-align: center;border-top: 4px solid var(--secondry-);
+margin-top: 0px;
+}
+.copy{opacity: 0.9;font-weight: 100;
+
+}
+
+@media (max-width: 768px){
+    .ul ul{
+        
+    }
+.hala :first-child{
+    
+}
+}
